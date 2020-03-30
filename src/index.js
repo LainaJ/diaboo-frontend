@@ -29,7 +29,6 @@ function allPrime(num) {
 //arrays problem
 function removeDuplicates (nums) {
   let numBeforeI = 0 
-
   for (let i = 1; i < nums.length; i++){
     if (nums[i] !== nums[i++]){
         nums[numBeforeI] = nums[i]
@@ -39,7 +38,7 @@ function removeDuplicates (nums) {
    console.log("nums:", nums)
 };
 
-let nums = [0, 0, 1, 2, 2]
+let nums = [1, 2, 2]
 removeDuplicates(nums)
 
 // ReactDOM.render(<App />, document.getElementById('root'));
