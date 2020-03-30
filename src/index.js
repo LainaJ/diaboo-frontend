@@ -4,10 +4,6 @@
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
-
-
-console.time("concatenation")
-
 function isPrime(num) {
   if (num < 2){
     return false
@@ -30,9 +26,21 @@ function allPrime(num) {
   return primes 
 }
 
+//arrays problem
+function removeDuplicates (nums) {
+  let numBeforeI = 0 
 
-console.log(allPrime(10))
-console.timeEnd("concatenation")
+  for (let i = 1; i < nums.length; i++){
+    if (nums[i] !== nums[i++]){
+        nums[numBeforeI] = nums[i]
+        numBeforeI++;
+      }
+   }
+   console.log("nums:", nums)
+};
+
+let nums = [0, 0, 1, 2, 2]
+removeDuplicates(nums)
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 

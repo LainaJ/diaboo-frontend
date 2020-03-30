@@ -14,8 +14,6 @@
   //   .then(dexcomData => console.log(dexcomData))
   // }
 
-  console.time("concatenation")
-
   function isPrime(num) {
     //if number is 0 or 1, not prime
     if (num < 2){
@@ -41,8 +39,8 @@
     return primes 
   }
 
-  console.log(allPrime(10))
-  console.timeEnd("concatenation end")
+  // console.log(allPrime(10))
+  // console.timeEnd("concatenation end")
  
 
   // render() {
@@ -61,3 +59,7 @@
   // }
 
 // export default App;
+
+
+//arrays 
+
